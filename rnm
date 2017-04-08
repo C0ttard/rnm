@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 if [[ $# -eq 1 ]]
 then
-    read -ei $1 newname
-    mv $1 $newname
+    read -ei "$1" newname
+    mv "$1" "$newname"
 else
     echo "Usage: $0 <file to be renamed>"
 fi
